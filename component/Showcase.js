@@ -100,9 +100,9 @@ const Showcase = () => {
                 a {
                     background: transparent;
                     display: inline-block;
-                    border: 1px solid #f0fff4;
+                    border: 1px solid #e7ab54;
                     text-transform: uppercase;
-                    color: #f0fff4;
+                    color: #e7ab54;
                     cursor: pointer;
                     font-size: 14px;
                     white-space: nowrap;
@@ -127,6 +127,7 @@ const Showcase = () => {
                         padding: 3.5em 1em;
                     }
                     .wrapper {
+                        width: 100%;
                         flex-direction: column;
                     }
 
@@ -149,6 +150,10 @@ const Showcase = () => {
                     }
 
                     @media screen and (max-width: 520px) {
+                        section > div {
+                            padding: 3.5em 1em;
+                        }
+
                         article {
                             padding: 3.5em 6em;
                             padding-left: 2.5em;

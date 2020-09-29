@@ -39,10 +39,12 @@
 }
 
 .menuOpen{
+    visibility: visible;
     transform: translateX(0px);
 }
 
 .menuClose{
+    visibility: hidden;
     transform: translateX(2000px);
 }
 

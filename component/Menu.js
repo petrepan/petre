@@ -156,9 +156,6 @@ const Menu = ({ open }) => (
                 height: 100%;
                 background: #c6f6d5;
                 z-index: 12;
-                ${open
-                    ? `opacity: 1; transform: translateX(0px);`
-                    : `opacity: 0; transform: translateX(2000px);`}
             }
 
             .navItem {
