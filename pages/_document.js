@@ -22,20 +22,18 @@ export default class extends Document {
                     <meta property="og:url" content={APP_URL} />
                     <meta property="og:title" content="Peter Awotola: Front End Developer" />
                     <meta property="og:description" content={APP_DESCRIPTION} />
-                    <meta property="og:image" content="/images/manifest.png" />
+                    <meta property="og:image" content="https://petre.netlify.app/images/manifest.png" />
 
                     <meta property="twitter:card" content="summary_large_image" />
                     <meta property="twitter:url" content={APP_URL} />
                     <meta property="twitter:title" content="Peter Awotola: Front End Developer" />
                     <meta property="twitter:description" content={APP_DESCRIPTION} />
-                    <meta property="twitter:image" content="/images/manifest.png" />
+                    <meta property="twitter:image" content="https://petre.netlify.app/images/manifest.png" />
 
                     <meta name="application-name" content={APP_NAME} />
                     <meta name="apple-mobile-web-app-capable" content="yes" />
                     <meta name="apple-mobile-web-app-status-bar-style" content="#22543D" />
                     <meta name="apple-mobile-web-app-title" content={APP_NAME} />
-                    <meta name="mobile-web-app-capable" content="yes" />
-                    <meta name="format-detection" content="telephone=no" />
                     <meta name="mobile-web-app-capable" content="yes" />
                     <meta name="theme-color" content="#22543D" />
 
