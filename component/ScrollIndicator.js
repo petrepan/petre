@@ -3,8 +3,7 @@
 const ScrollIndicator = ({ scrolled }) => {
     const progressBar = {
         height: '4.5px',
-        backgroundImage: 'url(images/footer.svg)',
-        // backgroundColor: "#e7ab54",
+        backgroundColor: '#e7ab54',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: scrolled,
