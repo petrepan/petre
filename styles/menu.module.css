@@ -39,13 +39,15 @@
 }
 
 .menuOpen{
+    opacity: 1;
     visibility: visible;
-    transform: translateX(0px);
+    pointer-events: visible;
 }
 
 .menuClose{
+    opacity: 0;
     visibility: hidden;
-    transform: translateX(2000px);
+    pointer-events: none;
 }
 
 @media screen and (max-width: 600px){
