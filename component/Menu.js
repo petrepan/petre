@@ -135,7 +135,7 @@ const Menu = ({ open }) => (
 
         <style jsx>{`
             nav {
-                position: fixed;
+                position: absolute;
                 top: 0px;
                 right: 0px;
                 color: var(--primary-deep-colour);

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 /* eslint-disable react/no-unescaped-entities */
 import utils from '../styles/utils.module.css';
 
@@ -15,25 +16,27 @@ const Hero = () => {
                             Frontend Developer<span>.</span>{' '}
                         </h1>
                         <p className={utils.fontLg}>I enjoy building products for the web.</p>
-                        <a>
-                            <div className="button">
-                                View Resume{' '}
-                                <svg
-                                    width="77"
-                                    height="22"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
+                        <Link href="/resume">
+                            <a>
+                                <div className="button">
+                                    View Resume{' '}
+                                    <svg
+                                        width="77"
+                                        height="22"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                        />
+                                    </svg>
+                                </div>
+                            </a>
+                        </Link>
                     </article>
                 </div>
 
