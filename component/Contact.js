@@ -51,7 +51,7 @@ const Contact = () => {
                                     placeholder="name"
                                     name="name"
                                     onChange={handleChange}
-                                    require="true"
+                                    required
                                 />
                             </div>
                             <div>
@@ -62,7 +62,7 @@ const Contact = () => {
                                     placeholder="email"
                                     name="email"
                                     onChange={handleChange}
-                                    require="true"
+                                    required
                                 />
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 value={value.message}
                                 rows="5"
-                                require="true"></textarea>
+                                required></textarea>
                         </div>
                         <button type="submit">
                             <div className="button">
@@ -218,6 +218,7 @@ const Contact = () => {
 
                     @media screen and (max-width: 500px) {
                         section {
+                            top: -10vh;
                             padding: 30px 10px;
                         }
                         h2 {
