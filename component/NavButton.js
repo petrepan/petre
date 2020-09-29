@@ -1,3 +1,4 @@
+import { bool, func } from 'prop-types';
 import menu from '../styles/menu.module.css';
 
 const NavButton = ({ open, setOpen }) => {
@@ -20,6 +21,11 @@ const NavButton = ({ open, setOpen }) => {
             `}</style>
         </button>
     );
+};
+
+NavButton.propTypes = {
+    open: bool.isRequired,
+    setOpen: func.isRequired
 };
 
 export default NavButton;
