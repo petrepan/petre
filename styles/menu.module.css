@@ -1,0 +1,62 @@
+.parallelBtn::after,
+.parallelBtn::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #e7ab54;
+    transition: all .3s ease-in-out;
+}
+
+.parallelBtn::before {
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.parallelBtn::after {
+    top: 1em;
+    right: 0;
+    width: 75%;
+}
+
+.rotateBtn::after, .rotateBtn::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--primary-deep-colour);
+    transition: all .3s ease-in-out;
+}
+
+.rotateBtn::before {
+    transform: rotate(45deg);
+}
+
+.rotateBtn::after {
+    transform: rotate(-45deg);
+}
+
+.menuOpen{
+    transform: translateX(0px);
+}
+
+.menuClose{
+    transform: translateX(2000px);
+}
+
+@media screen and (max-width: 600px){
+    .parallelBtn::before {
+        width: 85%;
+    }
+
+    .parallelBtn::after {
+        width: 65%;
+    }
+
+    .rotateBtn::after,
+    .rotateBtn::before{
+        width: 85%;
+    }
+}
