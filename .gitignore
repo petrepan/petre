@@ -3,3 +3,4 @@
 **/public/sw.js.map
 **/public/workbox-*.js.map
 node_modules
+.next
