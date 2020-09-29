@@ -2,7 +2,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 const APP_NAME = 'Petre';
-const APP_DESCRIPTION = "I'm a Front End Developer that specializes in building products for the web using current best practices in web development.";
+const APP_DESCRIPTION =
+    "I'm a Front End Developer that specializes in building products for the web using current best practices in web development.";
+const APP_URL = 'petre.netlify.app';
 
 export default class extends Document {
     static async getInitialProps(ctx) {
@@ -13,27 +15,20 @@ export default class extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    
                     <meta name="title" content="Peter Awotola: Front End Developer" />
                     <meta name="description" content={APP_DESCRIPTION} />
 
                     <meta property="og:type" content="website" />
-                    <meta property="og:url" content="https://metatags.io/" />
+                    <meta property="og:url" content={APP_URL} />
                     <meta property="og:title" content="Peter Awotola: Front End Developer" />
                     <meta property="og:description" content={APP_DESCRIPTION} />
-                    <meta
-                        property="og:image"
-                        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-                    />
+                    <meta property="og:image" content="/images/manifest.png" />
 
                     <meta property="twitter:card" content="summary_large_image" />
-                    <meta property="twitter:url" content="https://metatags.io/" />
+                    <meta property="twitter:url" content={APP_URL} />
                     <meta property="twitter:title" content="Peter Awotola: Front End Developer" />
                     <meta property="twitter:description" content={APP_DESCRIPTION} />
-                    <meta
-                        property="twitter:image"
-                        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-                    />
+                    <meta property="twitter:image" content="/images/manifest.png" />
 
                     <meta name="application-name" content={APP_NAME} />
                     <meta name="apple-mobile-web-app-capable" content="yes" />
