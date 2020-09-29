@@ -157,8 +157,8 @@ const Menu = ({ open }) => (
                 background: #c6f6d5;
                 z-index: 12;
                 ${open
-                    ? `opacity: 1; transform: translateX(2000px);`
-                    : `opacity: 0; transform: translateX(0px);`}
+                    ? `opacity: 1; transform: translateX(0px);`
+                    : `opacity: 0; transform: translateX(2000px);`}
             }
 
             .navItem {
