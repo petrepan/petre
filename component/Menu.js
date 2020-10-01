@@ -30,10 +30,14 @@ const Menu = ({ open }) => (
                     <h3>SAY HELLO</h3>
                     <ul>
                         <li>
-                            <a href="mailto:peterawotola@gmail.com">peterawotola@gmail.com</a>
+                            <a rel="noopener noreferrer" href="mailto:peterawotola@gmail.com">
+                                peterawotola@gmail.com
+                            </a>
                         </li>
                         <li>
-                            <a href="https://wa.me/08101211029">08101211029</a>
+                            <a rel="noopener noreferrer" href="https://wa.me/08101211029">
+                                08101211029
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +45,10 @@ const Menu = ({ open }) => (
             <div className="social">
                 <ul>
                     <li>
-                        <a href="https://github.com/petrepan">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/petrepan">
                             <svg
                                 width="77"
                                 height="22"
@@ -57,7 +64,10 @@ const Menu = ({ open }) => (
                         </a>
                     </li>
                     <li>
-                        <a href="https://dev.to/petrepan_">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://dev.to/petrepan_">
                             <svg
                                 width="77"
                                 height="22"
@@ -76,7 +86,10 @@ const Menu = ({ open }) => (
                         </a>
                     </li>
                     <li>
-                        <a href="https://linkedin.com/in/petrepan">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://linkedin.com/in/petrepan">
                             <svg
                                 width="77"
                                 height="22"
@@ -94,7 +107,10 @@ const Menu = ({ open }) => (
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/petrepan_">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://twitter.com/petrepan_">
                             <svg
                                 width="77"
                                 height="22"
@@ -112,7 +128,10 @@ const Menu = ({ open }) => (
                         </a>
                     </li>
                     <li>
-                        <a href="https://codepen.io/petrepan">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://codepen.io/petrepan">
                             <svg
                                 width="77"
                                 height="22"

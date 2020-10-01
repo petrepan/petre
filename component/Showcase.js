@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 /* eslint-disable react/no-unescaped-entities */
 const Showcase = () => {
     return (
@@ -9,25 +11,27 @@ const Showcase = () => {
                             I build and <br /> work on
                         </h2>
                         <p>Open source projects, web applications.</p>
-                        <a>
-                            <div className="button">
-                                see my work
-                                <svg
-                                    width="77"
-                                    height="22"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
+                        <Link href="/project">
+                            <a>
+                                <div className="button">
+                                    see my work
+                                    <svg
+                                        width="77"
+                                        height="22"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                        />
+                                    </svg>
+                                </div>
+                            </a>
+                        </Link>
                     </article>
                     <article className="article">
                         <h2>
@@ -35,7 +39,7 @@ const Showcase = () => {
                             <br /> i write
                         </h2>
                         <p>About things i've learnt over my career.</p>
-                        <a>
+                        <a href="https://dev.to/petrepan_">
                             <div className="button">
                                 read my articles
                                 <svg

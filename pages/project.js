@@ -13,7 +13,7 @@ const Project = () => {
                 </Head>
                 <section>
                     <div className={utils.container}>
-                        <h3>PROJECTS</h3>
+                        <h3>Recent works</h3>
                         <div className="project-wrapper">
                             <a className="project">
                                 <div className="project-img">

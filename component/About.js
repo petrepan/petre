@@ -192,6 +192,9 @@ const About = () => {
                     height: 20em;
                     width: 20em;
                     margin: auto;
+                    -webkit-box-shadow: 0 5px 10px #777;
+                    -moz-box-shadow: 0 5px 10px #777;
+                    box-shadow: 0 5px 10px #777;
                 }
 
                 svg {
@@ -238,6 +241,17 @@ const About = () => {
 
                     ul {
                         font-size: 13px;
+                    }
+
+                    figure {
+                        height: 15em;
+                        width: 15em;
+                    }
+
+                    svg {
+                        width: 22em;
+                        top: 6%;
+                        left: -29%;
                     }
                 }
             `}</style>

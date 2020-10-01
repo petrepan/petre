@@ -4,7 +4,10 @@ const Footer = () => {
             <div>
                 <ul className="social">
                     <li>
-                        <a href="https://dev.to/petrepan_">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://dev.to/petrepan_">
                             <svg
                                 width="77"
                                 height="22"
@@ -23,7 +26,10 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/petrepan">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/petrepan">
                             <svg
                                 width="77"
                                 height="22"
@@ -39,7 +45,10 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://linkedin.com/in/petrepan">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://linkedin.com/in/petrepan">
                             <svg
                                 width="77"
                                 height="22"
@@ -57,7 +66,10 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/petrepan_">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://twitter.com/petrepan_">
                             <svg
                                 width="77"
                                 height="22"
@@ -75,7 +87,10 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://codepen.io/petrepan">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://codepen.io/petrepan">
                             <svg
                                 width="77"
                                 height="22"
@@ -96,7 +111,12 @@ const Footer = () => {
                 <div>
                     <p>
                         Chopped and developed by{' '}
-                        <a href="https://twitter.com/petrepan_">Peter Awotola</a>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://twitter.com/petrepan_">
+                            Peter Awotola
+                        </a>
                     </p>
                 </div>
             </div>
