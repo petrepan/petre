@@ -17,7 +17,7 @@ const project = [
         about: 'Yeah, this very website.',
         link: '/',
         img: '/images/Portfolio.png',
-        tools: ['Nextjs', 'Css', 'Netlify']
+        tools: ['Nextjs', 'Css', 'Netlify', 'Eslint', 'Prettier']
     },
     {
         name: 'Greeen',
@@ -49,7 +49,7 @@ const MainProject = () => {
             {project.map((projects, i) => (
                 <div key={i} className="project">
                     {/* <div ref={refPlaceholder} className="lazyimage"></div> */}
-                    <LazyLoad height={200} width={300}>
+                    <LazyLoad height={200} width={300} once={true}>
                         <div className="project-img">
                             <img
                                 // onLoad={removePlaceholder}
@@ -102,7 +102,7 @@ const MainProject = () => {
 
                     .project {
                         position: relative;
-                        box-shadow: 0px 8px 6px -6px rgba(235, 234, 242, 0.58);
+                        box-shadow: 0px 2px 3px rgba(235, 234, 242, 0.38);
                         border-radius: 3px;
                         background: white;
                         cursor: pointer;
@@ -173,6 +173,11 @@ const MainProject = () => {
 
                     .header {
                         margin-bottom: 10px;
+                    }
+
+                    a {
+                        color: #F0FFF4;
+                        border-bottom: 1px solid;
                     }
 
                     .lazyimage {

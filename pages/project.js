@@ -237,89 +237,13 @@ const Project = () => {
                 </section>
             </Layout>
             <style jsx>{`
-                .project-wrapper {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-                    grid-gap: 3rem;
-                    margin: 6em 0;
-                    margin-top: 2em;
-                }
-
-                .project {
-                    position: relative;
-                    box-shadow: 0px 8px 6px -6px rgba(235, 234, 242, 0.58);
-                    border-radius: 3px;
-                    background: white;
-                    cursor: pointer;
-                }
-
-                .name {
-                    position: absolute;
-                    bottom: -30px;
-                }
-
-                .project-img {
-                    width: 100%;
-                }
-
-                img {
-                }
-
-                .project-img svg {
-                    width: 10em;
-                }
-
                 .w-6 {
                     width: 1em;
                     height: 1em;
                 }
-
-                .project-details {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    display: flex;
-                    transform: scaleY(0);
-                    flex-direction: column;
-                    background: green;
-                    overflow: hidden;
-                    padding: 10px;
-                    transition: all 0.4s ease-in-out;
-                    opacity: 0;
+                a {
+                    color: #f0fff4;
                 }
-
-                .project:hover .project-details {
-                    opacity: 0.9;
-                    transform: scaleY(1);
-                }
-
-                .project-details p {
-                    overflow-y: scroll;
-                    margin-bottom: 40px;
-                    padding-bottom: 10px;
-                }
-
-                .tools {
-                    display: flex;
-                    flex-wrap: wrap;
-                    position: absolute;
-                    bottom: 0;
-                    padding: 10px 0;
-                    padding-top: 20px;
-                    margin-top: 30px;
-                }
-
-                .tools div {
-                    margin-right: 8px;
-                    border-bottom: 1px solid #fff;
-                }
-
-                .header {
-                    margin-bottom: 10px;
-                }
-
                 .otherProject {
                     margin-bottom: 20px;
                     font-weight: 400;

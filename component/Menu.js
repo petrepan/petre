@@ -20,6 +20,14 @@ const Menu = ({ open }) => (
                             </Link>
                         </li>
                         <li>
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://dev.to/petrepan_">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
                             <Link href="/resume">
                                 <a>Resume</a>
                             </Link>
@@ -191,6 +199,14 @@ const Menu = ({ open }) => (
 
             a {
                 color: var(--primary-deep-colour);
+            }
+
+            li {
+                transition: all 0.4s;
+            }
+
+            li:hover {
+                transform: scale(1.2);
             }
 
             svg {
