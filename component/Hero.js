@@ -6,7 +6,10 @@ const Hero = () => {
     return (
         <section>
             <div className="herofooter">
-                <img src="/images/footer.svg" alt="african pattern" />
+                <img
+                    src="https://res.cloudinary.com/petrepan/image/upload/v1601566765/footer-pttrn.09157649_dea0ok.svg"
+                    alt="african pattern"
+                />
             </div>
             <div className={utils.container}>
                 <div className="article">
@@ -39,13 +42,6 @@ const Hero = () => {
                         </Link>
                     </article>
                 </div>
-
-                {/* <div className={`${utils.fontSm} hero-para`}>
-          <p>
-            Highly skilled at building fast, high performant web application
-          </p>
-          <p>Passionate about creating products useful in the society.</p>
-        </div> */}
             </div>
             <style jsx>{`
                 section {

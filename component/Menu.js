@@ -206,7 +206,7 @@ const Menu = ({ open }) => (
             }
 
             li:hover {
-                transform: scale(1.2);
+                transform: scale(1.06);
             }
 
             svg {
