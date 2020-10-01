@@ -2,6 +2,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 import Layout from '../component/Layout';
+import MainProject from '../component/Project';
 import utils from '../styles/utils.module.css';
 
 const Project = () => {
@@ -14,164 +15,14 @@ const Project = () => {
                 <section>
                     <div className={utils.container}>
                         <h3>Recent works</h3>
-                        <div className="project-wrapper">
-                            <a className="project">
-                                <div className="project-img">
-                                    <img src="/images/Geo-Search.png" alt="geosearch" />{' '}
-                                </div>
-                                <div>
-                                    <p className="name">Geosearch</p>
-                                </div>
-                                <div className="project-details">
-                                    <h3>
-                                        <a>
-                                            geosearch
-                                            <svg
-                                                className="w-6 h-6"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        geosearch is weather app that provides real time information
-                                        about a particular location, weather information spanning
-                                        upto the next seven days of the location.
-                                    </p>
-                                    <div className="tools">
-                                        <div>Javascript</div>
-                                        <div>PWA</div>
-                                        <div>Babel</div>
-                                        <div>Webpack</div>
-                                        <div>Firebase</div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a className="project">
-                                <div className="project-img">
-                                    <img src="/images/Portfolio.png" alt="portfolio" />
-                                </div>
-                                <div>
-                                    <p className="name">Portfolio</p>
-                                </div>
-                                <div className="project-details">
-                                    <h3>
-                                        <a>
-                                            portfolio
-                                            <svg
-                                                className="w-6 h-6"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p>Yeah, this very website.</p>
-                                    <div className="tools">
-                                        <div>Nextjs</div>
-                                        <div>CSS</div>
-                                        <div>Netlify</div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a className="project">
-                                <div className="project-img">
-                                    <img src="/images/greeen.png" alt="greeen" />
-                                </div>
-                                <div>
-                                    <p className="name">Greeen</p>
-                                </div>
-                                <div className="project-details">
-                                    <h3>
-                                        <a>
-                                            greeen
-                                            <svg
-                                                className="w-6 h-6"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        Greeen is an online platform where users share their
-                                        knowledge on everything agriculture. It's a community of
-                                        individuals passionate about the green life.
-                                    </p>
-                                    <div className="tools">
-                                        <div>React</div>
-                                        <div>Redux</div>
-                                        <div>Express</div>
-                                        <div>Mongoose</div>
-                                        <div>Nodejs</div>
-                                        <div>Tailwind CSS</div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a className="project">
-                                <div className="project-img">
-                                    <img src="/images/SiteMarker.png" alt="sitemarker" />{' '}
-                                </div>
-                                <div>
-                                    <p className="name">Sitemarker</p>
-                                </div>
-                                <div className="project-details">
-                                    <h3>
-                                        <a>
-                                            sitemarker
-                                            <svg
-                                                className="w-6 h-6"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                            </svg>
-                                        </a>
-                                    </h3>
-                                    <p>
-                                        A progressive web application that bookmarks all your
-                                        favourite websites in one place for easy access. <br />
-                                        Features: Dark mode, offline mode, mobile app, localstorage.
-                                    </p>
-                                    <div className="tools">
-                                        <div>Javascript</div>
-                                        <div>PWA</div>
-                                        <div>Cache Api</div>
-                                        <div>HTML/SCSS</div>
-                                        <div>Netlify</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
+                        <MainProject />
                         <h3 className="header">Other projects</h3>
                         <div className="otherProject">
                             <h4>
-                                <a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://codepen.io/petrepan/pen/QWjreMW">
                                     Random Quote Generator{' '}
                                     <svg
                                         className="w-6 h-6"
@@ -195,7 +46,10 @@ const Project = () => {
                         </div>
                         <div className="otherProject">
                             <h4>
-                                <a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://codepen.io/petrepan/pen/MWaXobz">
                                     Markdown Previewer{' '}
                                     <svg
                                         className="w-6 h-6"
@@ -219,7 +73,10 @@ const Project = () => {
                         </div>
                         <div className="otherProject">
                             <h4>
-                                <a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://hse-aid.herokuapp.com/">
                                     HSE_Aid "Coming soon page"{' '}
                                     <svg
                                         className="w-6 h-6"
@@ -243,7 +100,10 @@ const Project = () => {
                         </div>
                         <div className="otherProject">
                             <h4>
-                                <a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://codepen.io/petrepan/pen/NWGLdQy">
                                     Javascript Calculator{' '}
                                     <svg
                                         className="w-6 h-6"
@@ -267,7 +127,10 @@ const Project = () => {
                         </div>
                         <div className="otherProject">
                             <h4>
-                                <a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://codepen.io/petrepan/pen/dyYjYpP">
                                     Drum Machine{' '}
                                     <svg
                                         className="w-6 h-6"
@@ -291,7 +154,10 @@ const Project = () => {
                         </div>
                         <div className="otherProject">
                             <h4>
-                                <a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://codepen.io/petrepan/pen/poJEvrg">
                                     Moment Replica{' '}
                                     <svg
                                         className="w-6 h-6"
@@ -315,8 +181,11 @@ const Project = () => {
                         </div>
                         <div className="otherProject">
                             <h4>
-                                <a>
-                                    Random Quote Generator{' '}
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://codepen.io/petrepan/pen/NWGOKKo">
+                                    Pomodoro Clock{' '}
                                     <svg
                                         className="w-6 h-6"
                                         fill="none"
@@ -339,7 +208,10 @@ const Project = () => {
                         </div>
                         <div className="otherProject">
                             <h4>
-                                <a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://hoteltemplate.netlify.app/">
                                     Hotel Template{' '}
                                     <svg
                                         className="w-6 h-6"

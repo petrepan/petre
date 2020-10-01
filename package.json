@@ -8,7 +8,8 @@
     "next-on-netlify": "^2.4.0",
     "next-pwa": "^3.1.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-lazyload": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^7.10.0",
