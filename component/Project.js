@@ -1,9 +1,25 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import LazyLoad from 'react-lazyload';
+import Image from 'next/image';
 
 const project = [
+    {
+        name: 'MERN Auth Starter',
+        about:
+            'geosearch is weather app that provides real time information about a particular location, weather information spanning upto the next seven daysof the location.',
+        link: 'https://mern-auth-starter.netlify.app/',
+        img: '/images/mern.png',
+        tools: ['React', 'Nodejs', 'Express', 'Redux', 'Mongoose']
+    },
+    {
+        name: 'Headless Blog Starter',
+        about:
+            'geosearch is weather app that provides real time information about a particular location, weather information spanning upto the next seven daysof the location.',
+        link: 'https://bloggy.vercel.app/',
+        img: '/images/blog.png',
+        tools: ['Next js', 'Ghost CMS', 'JAMstack', 'Vercel']
+    },
     {
         name: 'Geosearch',
         about:
@@ -48,17 +64,15 @@ const MainProject = () => {
         <div className="project-wrapper">
             {project.map((projects, i) => (
                 <div key={i} className="project">
-                    {/* <div ref={refPlaceholder} className="lazyimage"></div> */}
-                    <LazyLoad height={200} width={300} once={true}>
-                        <div className="project-img">
-                            <img
-                                // onLoad={removePlaceholder}
-                                // onError={removePlaceholder}
-                                src={projects.img}
-                                alt={projects.name}
-                            />{' '}
-                        </div>
-                    </LazyLoad>
+                    <div className="project-img">
+                        <Image
+                            src={projects.img}
+                            alt={projects.img}
+                            height="200"
+                            width="350"
+                            layout="responsive"
+                        />
+                    </div>
                     <div>
                         <p className="name">{projects.name}</p>
                     </div>
@@ -102,7 +116,7 @@ const MainProject = () => {
 
                     .project {
                         position: relative;
-                        box-shadow: 0px 2px 3px rgba(235, 234, 242, 0.38);
+                        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(0, 0, 0, 0.4);
                         border-radius: 3px;
                         background: white;
                         cursor: pointer;
@@ -176,7 +190,7 @@ const MainProject = () => {
                     }
 
                     a {
-                        color: #F0FFF4;
+                        color: #f0fff4;
                         border-bottom: 1px solid;
                     }
 
