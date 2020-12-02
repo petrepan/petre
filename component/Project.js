@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import Image from 'next/image';
 
 const project = [
     {
@@ -63,7 +62,7 @@ const MainProject = () => {
             {project.map((projects, i) => (
                 <div key={i} className="project">
                     <div className="project-img">
-                        <Image
+                        <img
                             src={projects.img}
                             alt={projects.img}
                             height="200"
