@@ -6,16 +6,14 @@ import Image from 'next/image';
 const project = [
     {
         name: 'MERN Auth Starter',
-        about:
-            'geosearch is weather app that provides real time information about a particular location, weather information spanning upto the next seven daysof the location.',
+        about: 'A MERN stack boilerplate with authentication and authorization functionality.',
         link: 'https://mern-auth-starter.netlify.app/',
         img: '/images/mern.png',
         tools: ['React', 'Nodejs', 'Express', 'Redux', 'Mongoose']
     },
     {
-        name: 'Headless Blog Starter',
-        about:
-            'geosearch is weather app that provides real time information about a particular location, weather information spanning upto the next seven daysof the location.',
+        name: 'Headless Blog App',
+        about: 'A JAMstack Blog Site built with Next js and Ghost CMS.',
         link: 'https://bloggy.vercel.app/',
         img: '/images/blog.png',
         tools: ['Next js', 'Ghost CMS', 'JAMstack', 'Vercel']
