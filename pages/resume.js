@@ -10,7 +10,7 @@ const Resume = () => {
             </Head>
             <div className="wrapper">
                 <div className="link">
-                    <Link href="/">
+                    <Link href="https://petre.netlify.app">
                         <a className="contact-sm">
                             <svg
                                 aria-hidden="true"
@@ -73,13 +73,13 @@ const Resume = () => {
                                 strokeWidth="2"
                                 d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
-                        Download
+                        <span>Download</span>
                     </a>
                 </div>
                 <div className="skills">
                     <section className="contact">
-                        <Link href="/">
-                            <a>peter.netlify.app</a>
+                        <Link href="https://petre.netlify.app">
+                            <a>petre.netlify.app</a>
                         </Link>
                         <a href="mailto:peterawotola@gmail.com">peterawotola@gmail.com</a>
                         <div>Lagos, Nigeria</div>
@@ -215,8 +215,8 @@ const Resume = () => {
                         <h3>Projects</h3>
                         <p>
                             Links to my works can be found on{' '}
-                            <Link href="/project">
-                                <a>peter.netlify.app/projects</a>
+                            <Link href="https://petre.netlify.app/project">
+                                <a>petre.netlify.app/projects</a>
                             </Link>
                         </p>
                     </section>
@@ -241,18 +241,23 @@ const Resume = () => {
                     position: absolute;
                     top: 20px;
                     right: 20px;
-                    display: flex;
+                    display: inline-flex;
+                    align-items: end;
                     font-size: 0.95em;
                 }
 
                 .link svg {
                     width: 1em;
                     height: 1em;
+                    vertical-align: top;
                 }
 
                 .link a {
-                    align-items: center;
-                    margin-right: 7px;
+                    margin-left: 7px;
+                }
+
+                .link span {
+                    font-size: 12px;
                 }
 
                 .link a:hover {
