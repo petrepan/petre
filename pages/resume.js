@@ -27,7 +27,10 @@ const Resume = () => {
                             </svg>
                         </a>
                     </Link>
-                    <a className="contact-sm" href="mailto:peterawotola@gmail.com">
+                    <a
+                        className="contact-sm"
+                        rel="noopener noreferrer"
+                        href="mailto:peterawotola@gmail.com">
                         <svg
                             aria-hidden="true"
                             focusable="false"
@@ -81,7 +84,9 @@ const Resume = () => {
                         <Link href="https://petre.netlify.app">
                             <a>petre.netlify.app</a>
                         </Link>
-                        <a href="mailto:peterawotola@gmail.com">peterawotola@gmail.com</a>
+                        <a rel="noopener noreferrer" href="mailto:peterawotola@gmail.com">
+                            peterawotola@gmail.com
+                        </a>
                         <div>Lagos, Nigeria</div>
                     </section>
                     <section className="tech">
@@ -96,6 +101,7 @@ const Resume = () => {
                             <li>MongoDb</li>
                             <li>CSS-in-JS</li>
                             <li>Bootstrap</li>
+                            <li>JAMstack</li>
                         </ul>
                     </section>
 
@@ -126,7 +132,7 @@ const Resume = () => {
                         <h3>Core Technologies</h3>
                         <p>
                             JavaScript, Sass, React, Next.js, NodeJs, ExpressJs, MongoDb, CSS-in-JS,
-                            PWAs, SEO, Performance Optimization
+                            PWAs, SEO, Performance Optimization, CMS, JAMstack
                         </p>
                     </section>
                     <section className="exp">
@@ -135,18 +141,28 @@ const Resume = () => {
                             <div>
                                 <header>
                                     <h4>Build for SDG - Andela and Facebook</h4>{' '}
-                                    <span>Aug 2020 - Present</span>
+                                    <span>Aug 2020 - Nov 2020</span>
                                 </header>
                                 <p>
                                     Contributing to open source project and building industry-led
                                     projects that gives high value, high impact in real world
                                     experience.
                                 </p>
+                                <ul>
+                                    <li>
+                                        Collaborated with back-end engineers and contribute to the
+                                        design of APIs to improve the user experience
+                                    </li>
+                                    <li>
+                                        Crafted secure, performant, cross-platform browser
+                                        applications
+                                    </li>
+                                </ul>
                             </div>
                             <div>
                                 <header>
                                     <h4>Google Africa Developer Scholarship</h4>{' '}
-                                    <span>May 2020 - Present</span>
+                                    <span>May 2020 - Oct 2020</span>
                                 </header>
                                 <p>
                                     One of 30000 developers supported by the Andela Learning
