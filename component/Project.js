@@ -65,8 +65,6 @@ const MainProject = () => {
                         <img
                             src={projects.img}
                             alt={projects.img}
-                            height="200"
-                            width="350"
                             layout="responsive"
                         />
                     </div>
@@ -130,9 +128,12 @@ const MainProject = () => {
 
                     .project-img {
                         width: 100%;
+                        height: 100%;
                     }
 
                     img {
+                        height: 100%;
+                        width: 100%;
                     }
 
                     .w-6 {
