@@ -38,16 +38,16 @@
     transform: rotate(-45deg);
 }
 
-.menuOpen{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: visible;
-}
-
 .menuClose{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.menuOpen {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
 }
 
 @media screen and (max-width: 600px){
