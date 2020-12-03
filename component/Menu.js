@@ -3,7 +3,7 @@ import Link from 'next/link';
 import menu from '../styles/menu.module.css';
 
 const Menu = ({ open }) => (
-    <nav className={`${open ? menu.menuOpen : menu.menuClose}`}>
+    <nav className={`${!open ? menu.menuClose : menu.menuOpen}`}>
         <div className="bg"></div>
         <div className="wrapper">
             <div className="navItem">
