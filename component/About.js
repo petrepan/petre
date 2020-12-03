@@ -66,7 +66,8 @@ const About = () => {
                             <li>HTML and (S)CSS</li>
                             <li>Node.js</li>
                             <li>Express</li>
-                            <li>Mongoose</li>
+                            <li>MongoDB</li>
+                            <li>Next js</li>
                         </ul>
                     </div>
 
