@@ -52,12 +52,18 @@ const About = () => {
                                 href="https://dev.to/petrepan_">
                                 write
                             </a>{' '}
-                            soft skill articles based on things I've learned over the course of my
+                            soft skill articles based on things I've learnt over the course of my
                             career.
                         </p>
                         <p>
-                            When i'm not coding, i spend most of my time surfing through twitter or
-                            taking some amateur pictures on my phone.
+                            When i'm not coding, i spend most of my time surfing through{' '}
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://twitter/petrepan_">
+                                twitter
+                            </a>{' '}
+                            or taking some amateur pictures on my phone.
                         </p>
                         <p>Here are a few technologies i've been working with recently:</p>
                         <ul>
