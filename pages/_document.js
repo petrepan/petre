@@ -22,13 +22,13 @@ export default class extends Document {
                     <meta property="og:url" content={APP_URL} />
                     <meta property="og:title" content="Peter Awotola: Front End Developer" />
                     <meta property="og:description" content={APP_DESCRIPTION} />
-                    <meta property="og:image" content="https://petre.netlify.app/images/manifest.png" />
+                    <meta property="og:image" content="https://petre.netlify.app/images/meta.jpeg" />
 
                     <meta property="twitter:card" content="summary_large_image" />
                     <meta property="twitter:url" content={APP_URL} />
                     <meta property="twitter:title" content="Peter Awotola: Front End Developer" />
                     <meta property="twitter:description" content={APP_DESCRIPTION} />
-                    <meta property="twitter:image" content="https://petre.netlify.app/images/manifest.png" />
+                    <meta property="twitter:image" content="https://petre.netlify.app/images/meta.jpeg" />
 
                     <meta name="application-name" content={APP_NAME} />
                     <meta name="apple-mobile-web-app-capable" content="yes" />
