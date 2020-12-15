@@ -310,10 +310,6 @@ const Resume = () => {
                     display: none;
                 }
 
-                .skills {
-                    margin-right: 4em;
-                }
-
                 .skills section {
                     margin-bottom: 2em;
                 }
