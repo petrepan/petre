@@ -21,7 +21,7 @@ const project = [
         name: 'Geosearch',
         about:
             'geosearch is weather app that provides real time information about a particular location, weather information spanning upto the next seven daysof the location.',
-        link: 'https://geoweather.netlify.app',
+        link: 'https://geoweatherapp.netlify.app',
         img: '/images/Geo-Search.png',
         tools: ['Javascript', 'Babel', 'Webpack', 'Netlify']
     },
