@@ -4,11 +4,27 @@ import React from 'react';
 
 const project = [
     {
+        name: 'Wedevelopers',
+        about:
+            'Wedeveloper is a platform for developers across the globe to enhance their skills, get jobs, work on project hereby gaining a lot of experience that is needed in the technology world.',
+        link: 'https://wedevelopers.netlify.app/',
+        img: '/images/wedeveloper.png',
+        tools: ['React/Redux', 'Nodejs/Express', 'MongoDB', 'Wordpress Api', 'Calendly']
+    },
+    {
+        name: 'Fournir',
+        about:
+            'An ecommerce store for quality furniture products',
+        link: '#',
+        img: '/images/fournir.png',
+        tools: ['React/Redux', 'Nodejs/Express', 'MongoDB']
+    },
+    {
         name: 'MERN Auth Starter',
         about: 'A MERN stack boilerplate with authentication and authorization functionality.',
         link: 'https://mern-auth-starter.netlify.app/',
         img: '/images/mern.png',
-        tools: ['React', 'Nodejs', 'Express', 'Redux', 'Mongoose']
+        tools: ['React/Redux', 'Nodejs/Express', 'Sendgrid', 'MongoDB']
     },
     {
         name: 'Headless Blog App',
