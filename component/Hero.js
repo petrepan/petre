@@ -19,7 +19,10 @@ const Hero = () => {
                             Frontend Developer<span>.</span>{' '}
                         </h1>
                         <p className={utils.fontLg}>I enjoy building products for the web.</p>
-                        <Link href="/resume">
+                        <Link
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href="https://res.cloudinary.com/petrepan/image/upload/v1617199764/Peter_Awotola_Resume.pdf">
                             <a>
                                 <div className="button">
                                     View Resume{' '}

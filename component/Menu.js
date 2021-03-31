@@ -28,7 +28,10 @@ const Menu = ({ open }) => (
                             </a>
                         </li>
                         <li>
-                            <Link href="/resume">
+                            <Link
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href="https://res.cloudinary.com/petrepan/image/upload/v1617199764/Peter_Awotola_Resume.pdf">
                                 <a>Resume</a>
                             </Link>
                         </li>
