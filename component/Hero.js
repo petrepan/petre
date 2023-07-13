@@ -19,30 +19,28 @@ const Hero = () => {
                             Frontend Developer<span>.</span>{' '}
                         </h1>
                         <p className={utils.fontLg}>I enjoy building products for the web.</p>
-                        <Link
+                        <a
                             rel="noopener noreferrer"
                             target="_blank"
-                            href="https://res.cloudinary.com/petrepan/image/upload/v1617199764/Peter_Awotola_Resume.pdf">
-                            <a>
-                                <div className="button">
-                                    View Resume{' '}
-                                    <svg
-                                        width="77"
-                                        height="22"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                        />
-                                    </svg>
-                                </div>
-                            </a>
-                        </Link>
+                            href="https://res.cloudinary.com/petrepan/image/upload/v1689256839/Peter_Awotola_Resume_xptzpt.pdf">
+                            <div className="button">
+                                View Resume{' '}
+                                <svg
+                                    width="77"
+                                    height="22"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
                     </article>
                 </div>
             </div>
