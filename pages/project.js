@@ -14,7 +14,7 @@ const Project = () => {
                 </Head>
                 <section>
                     <div className={utils.container}>
-                        <h3>Recent works</h3>
+                        <h3 className="heading">Recent works</h3>
                         <MainProject />
                         <h3 className="header">Other projects</h3>
                         <div className="otherProject">
@@ -237,6 +237,10 @@ const Project = () => {
                 </section>
             </Layout>
             <style jsx>{`
+                .heading {
+                    font-size: 80px;
+                }
+
                 .w-6 {
                     width: 1em;
                     height: 1em;
@@ -264,6 +268,12 @@ const Project = () => {
 
                 .otherProject h4:hover {
                     border-bottom: 1px solid #fff;
+                }
+
+                @media screen and (max-width: 800px){
+                    .heading {
+                        font-size: 40px;
+                    }
                 }
             `}</style>
         </Fragment>

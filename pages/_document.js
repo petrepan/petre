@@ -22,13 +22,19 @@ export default class extends Document {
                     <meta property="og:url" content={APP_URL} />
                     <meta property="og:title" content="Peter Awotola: Front End Developer" />
                     <meta property="og:description" content={APP_DESCRIPTION} />
-                    <meta property="og:image" content="https://petre.netlify.app/images/manifest.png" />
+                    <meta
+                        property="og:image"
+                        content="https://petre.netlify.app/images/manifest.png"
+                    />
 
                     <meta property="twitter:card" content="summary_large_image" />
                     <meta property="twitter:url" content={APP_URL} />
                     <meta property="twitter:title" content="Peter Awotola: Front End Developer" />
                     <meta property="twitter:description" content={APP_DESCRIPTION} />
-                    <meta property="twitter:image" content="https://petre.netlify.app/images/manifest.png" />
+                    <meta
+                        property="twitter:image"
+                        content="https://petre.netlify.app/images/manifest.png"
+                    />
 
                     <meta name="application-name" content={APP_NAME} />
                     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -36,11 +42,13 @@ export default class extends Document {
                     <meta name="apple-mobile-web-app-title" content={APP_NAME} />
                     <meta name="mobile-web-app-capable" content="yes" />
                     <meta name="theme-color" content="#22543D" />
-
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
                         rel="stylesheet"
                     />
+
                     {/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
                     {/* <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' /> */}
                     <link rel="apple-touch-icon" sizes="192x192" href="/icons/pwa192x192.png" />

@@ -4,65 +4,42 @@ import React from 'react';
 
 const project = [
     {
+        name: 'Recruitment Portal',
+        about: 'A recruitment plaform used by applicant and admin.',
+        link: 'https://recruit.decagon.institute/',
+        tools: ['React', 'Remix Run', 'Tailwindcss', 'Keycloak']
+    },
+    {
+        name: 'Nexthandle',
+        about: 'Nexthandle is an ecommerce application for trading gadgets between vendors and users.',
+        link: 'https://www.nexthandle.com/',
+        tools: ['React', 'Next.js', 'Nodejs/Express', 'React-Query']
+    },
+    {
+        name: 'Symfony',
+        about: 'Landing page and application page for an Ed-tech company',
+        link: 'https://symfonyhq.com/',
+        tools: ['React', 'Next.js', 'Nodejs/Express']
+    },
+    {
         name: 'Wedevelopers',
         about:
             'Wedeveloper is a platform for developers across the globe to enhance their skills, get jobs, work on project hereby gaining a lot of experience that is needed in the technology world.',
         link: 'https://wedevelopers.netlify.app/',
-        img: '/images/wedeveloper.png',
-        tools: ['React/Redux', 'Nodejs/Express', 'MongoDB', 'Wordpress Api', 'Calendly']
-    },
-    {
-        name: 'Fournir',
-        about:
-            'An ecommerce store for quality furniture products',
-        link: '#',
-        img: '/images/fournir.png',
-        tools: ['React/Redux', 'Nodejs/Express', 'MongoDB']
+        tools: ['React', 'Redux', 'Nodejs/Express', 'MongoDB', 'Wordpress Api']
     },
     {
         name: 'MERN Auth Starter',
         about: 'A MERN stack boilerplate with authentication and authorization functionality.',
         link: 'https://mern-auth-starter.netlify.app/',
         img: '/images/mern.png',
-        tools: ['React/Redux', 'Nodejs/Express', 'Sendgrid', 'MongoDB']
-    },
-    {
-        name: 'Headless Blog App',
-        about: 'A JAMstack Blog Site built with Next js and Ghost CMS.',
-        link: 'https://bloggy.vercel.app/',
-        img: '/images/blog.png',
-        tools: ['Next js', 'Ghost CMS', 'JAMstack', 'Vercel']
-    },
-    {
-        name: 'Geosearch',
-        about:
-            'geosearch is weather app that provides real time information about a particular location, weather information spanning upto the next seven daysof the location.',
-        link: 'https://geoweatherapp.netlify.app',
-        img: '/images/Geo-Search.png',
-        tools: ['Javascript', 'Babel', 'Webpack', 'Netlify']
+        tools: ['React', 'Redux', 'Nodejs/Express', 'Sendgrid', 'MongoDB']
     },
     {
         name: 'Portfolio',
-        about: 'Yeah, this very website.',
+        about: 'Yeah, this website.',
         link: '/',
-        img: '/images/Portfolio.png',
-        tools: ['Nextjs', 'Css', 'Netlify', 'Eslint', 'Prettier']
-    },
-    {
-        name: 'Greeen',
-        about:
-            "Greeen is an online platform where users share their knowledge on everything agriculture. It's a community of individuals passionate about the greenlife.",
-        link: 'https://github.com/petrepan/Greeen',
-        img: '/images/greeen.png',
-        tools: ['React', 'Redux', 'Express', 'Mongoose', 'Tailwind', 'NodeJs']
-    },
-    {
-        name: 'Sitemarker',
-        about:
-            'A progressive web application that bookmarks all your favourite websites in one place for easy access. Features: Dark mode, offline mode, mobile app, localstorage.',
-        link: 'https://sitemarker.netlify.app',
-        img: '/images/SiteMarker.png',
-        tools: ['Javascript', 'PWA', 'HTML/SCSS', 'Netlify']
+        tools: ['Next.js', 'Css', 'Netlify form']
     }
 ];
 
@@ -77,20 +54,13 @@ const MainProject = () => {
         <div className="project-wrapper">
             {project.map((projects, i) => (
                 <div key={i} className="project">
-                    <div className="project-img">
-                        <img
-                            src={projects.img}
-                            alt={projects.img}
-                            layout="responsive"
-                        />
-                    </div>
-                    <div>
-                        <p className="name">{projects.name}</p>
-                    </div>
+                    <h3 className="name">{projects.name}</h3>
                     <div className="project-details">
-                        <h3>
+                        <p>{projects.about}</p>
+                        <div>
+                            <div className="tools">{projects.tools.join(', ')}</div>
                             <a target="_blank" rel="noopener noreferrer" href={projects.link}>
-                                {projects.name}
+                                Live
                                 <svg
                                     className="w-6 h-6"
                                     fill="none"
@@ -104,12 +74,6 @@ const MainProject = () => {
                                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                 </svg>
                             </a>
-                        </h3>
-                        <p>{projects.about}</p>
-                        <div className="tools">
-                            {projects.tools.map((tool, i) => (
-                                <div key={i}> {tool}</div>
-                            ))}
                         </div>
                     </div>
                 </div>
@@ -119,37 +83,23 @@ const MainProject = () => {
                 {`
                     .project-wrapper {
                         display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-                        grid-gap: 3rem;
-                        margin: 6em 0;
-                        margin-top: 2em;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1rem;
+                        margin-bottom: 6em;
                     }
 
                     .project {
-                        position: relative;
-                        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(0, 0, 0, 0.4);
+                        padding: 1.5em 2.5em;
                         border-radius: 3px;
-                        background: white;
-                        cursor: pointer;
+                        background: #276749;
                     }
 
                     .name {
-                        position: absolute;
-                        bottom: -30px;
+                        font-size: 30px;
                     }
 
-                    h3 {
-                        margin-bottom: 10px;
-                    }
-
-                    .project-img {
-                        width: 100%;
-                        height: 100%;
-                    }
-
-                    img {
-                        height: 100%;
-                        width: 100%;
+                    .tools {
+                        display: flex;
                     }
 
                     .w-6 {
@@ -158,45 +108,10 @@ const MainProject = () => {
                     }
 
                     .project-details {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
                         display: flex;
-                        transform: scaleY(0);
                         flex-direction: column;
-                        background: green;
-                        overflow: hidden;
-                        padding: 10px;
-                        transition: all 0.4s ease-in-out;
-                        opacity: 0;
-                    }
-
-                    .project:hover .project-details {
-                        opacity: 0.9;
-                        transform: scaleY(1);
-                    }
-
-                    .project-details p {
-                        overflow-y: scroll;
-                        margin-bottom: 40px;
-                        padding-bottom: 10px;
-                    }
-
-                    .tools {
-                        display: flex;
-                        flex-wrap: wrap;
-                        position: absolute;
-                        bottom: 0;
-                        padding: 10px 0;
-                        padding-top: 20px;
-                        margin-top: 30px;
-                    }
-
-                    .tools div {
-                        margin-right: 8px;
-                        border-bottom: 1px solid #fff;
+                        justify-content: space-between;
+                        min-height: 150px
                     }
 
                     .header {
@@ -205,27 +120,13 @@ const MainProject = () => {
 
                     a {
                         color: #f0fff4;
-                        border-bottom: 1px solid;
+                        border-bottom: 1px solid #e7ab54;
+                        color: #e7ab54;
                     }
 
-                    .lazyimage {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        animation: loadingAnimation 1s infinite;
-                    }
-
-                    @keyframes loadingAnimation {
-                        0% {
-                            background-color: #fff;
-                        }
-                        50% {
-                            background-color: #ccc;
-                        }
-                        100% {
-                            background-color: #fff;
+                    @media screen and (max-width: 800px){
+                        .project-wrapper {
+                            grid-template-columns: 1fr;
                         }
                     }
                 `}

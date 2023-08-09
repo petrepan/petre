@@ -14,17 +14,18 @@ const Hero = () => {
             <div className={utils.container}>
                 <div className="article">
                     <article>
-                        <h6 className={utils.fontSm}>Hi, I'm a</h6>
+                        <h6 className={utils.fontSm}>Hi! My Name is Peter, I'm a</h6>
                         <h1 className={utils.fontLg}>
-                            Frontend Developer<span>.</span>{' '}
+                            Software Engineer<span>.</span>
                         </h1>
                         <p className={utils.fontLg}>I enjoy building products for the web.</p>
-                        <a
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            href="https://res.cloudinary.com/petrepan/image/upload/v1689256839/Peter_Awotola_Resume_xptzpt.pdf">
-                            <div className="button">
-                                View Resume{' '}
+                        <div className="btn-wrapper">
+                            <a
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="button"
+                                href="https://docs.google.com/document/d/1YGy_ZGVJWzabP1b5X1TLepozSb58Ehq_jXr9uy8HORQ/edit?usp=sharing">
+                                <span>View Resume</span>
                                 <svg
                                     width="77"
                                     height="22"
@@ -39,8 +40,27 @@ const Hero = () => {
                                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                                     />
                                 </svg>
-                            </div>
-                        </a>
+                            </a>
+                            <Link href="/project">
+                                <a className="project-btn">
+                                    <span>Featured Work</span>
+                                    <svg
+                                        width="77"
+                                        height="22"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </Link>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -88,28 +108,43 @@ const Hero = () => {
                     color: #e7ab54;
                 }
 
+                .btn-wrapper {
+                    display: flex;
+                }
+
                 a {
                     background: transparent;
-                    display: inline-block;
-                    border: 1px solid #e7ab54;
-                    padding: 0.5em 1em;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #e7ab54;
+                    // height: 65px;
+                    // padding: 1em 2em;
+                    font-weight: 600;
                     text-transform: uppercase;
                     color: #e7ab54;
                     cursor: pointer;
-                    font-size: 14px;
+                    font-size: 18px;
                     margin-top: 32px;
                 }
-                svg {
-                    width: 5em;
-                    margin-left: 3px;
-                }
-                .button {
-                    display: flex;
-                    align-items: center;
+
+                .project-btn {
+                    margin-left: 30px;
+                    background: #e7ab54;
+                    color: #22543d;
                 }
 
+                svg {
+                    width: 1.5em;
+                    margin-left: 20px;
+                }
+                // .button {
+                //     display: flex;
+                //     align-items: center;
+                // }
+
                 @media screen and (max-width: 500px) {
-                    section {
+                    .btn-wrapper svg {
+                        display: none;
                     }
                 }
             `}</style>

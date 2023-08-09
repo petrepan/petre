@@ -28,12 +28,12 @@ const Menu = ({ open }) => (
                             </a>
                         </li>
                         <li>
-                            <Link
+                            <a
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                href="https://res.cloudinary.com/petrepan/image/upload/v1617199764/Peter_Awotola_Resume.pdf">
+                                href="https://docs.google.com/document/d/1YGy_ZGVJWzabP1b5X1TLepozSb58Ehq_jXr9uy8HORQ/edit?usp=sharing">
                                 <a>Resume</a>
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
